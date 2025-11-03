@@ -61,5 +61,7 @@ http://127.0.0.1:8000/docs
 - GET **/terms/search-by-name/{term_name}** Получение информации о конкретном термине по ключевому слову 
 - PATCH **/terms/{term_id}** Обновление существующего термина по id 
 - DELETE **/terms/{term_id}** Удаление термина из глоссария.
+
 А также применен **Pydantic** для валидации входных данных и формирования схем.
 
+**Ссылка на документацию FastAPI:** https://glossary-api-liart.vercel.app/docs
