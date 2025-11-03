@@ -1,0 +1,11 @@
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.card {
+  border-radius: 0.5rem;
+}
+
+textarea {
+  resize: none;
+}

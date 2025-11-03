@@ -9,3 +9,50 @@
 ## Исследовательская задача
 
 Составьте подборку статей, где проводилось бы сравнение реализаций микросервисной архитектуры с помощью подходов REST и RPC, GraphQL. Приоритет - исследования, где выполнялись бы замеры и бенчмарки. Приведите наиболее важные результаты таких исследований. Составьте краткое резюме этих исследований. 
+
+## Запуск локального сервера gRPC
+
+Клонирование репозитория:
+```bash
+git clone https://github.com/serjobor/glossary-api.git
+```
+
+Переход в папку с сервером на gRPC-protobuf
+```bash
+cd gRPC-protobuf
+```
+
+Подключение виртуального окружения:
+```bash
+python -m venv venv
+.\.venv\Scripts\Activate.ps1
+```
+
+Установка всех зависимостей:
+```bash
+pip install -r requirements.txt
+```
+
+Генерация protobuf-файлов
+
+```bash
+python -m grpc_tools.protoc -I=proto \
+  --python_out=. --grpc_python_out=. \
+  proto/glossary.proto
+```
+
+ Запуск gRPC-сервера
+
+```bash
+python server.py
+```
+
+  Запуск веб-интерфейса
+
+```bash
+python main.py
+```
+
+
+- gRPC-сервер – ::50051
+- Веб-клиент – http://localhost:8000

@@ -1,0 +1,4 @@
+.venv/
+.idea/
+glossary_pb2.py
+glossary_pb2_grpc.py

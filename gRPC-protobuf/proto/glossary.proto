@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package glossary;
+
+service GlossaryService {
+  rpc CreateTerm (CreateTermRequest) returns (TermEntry);
+  rpc GetTerm (GetTermRequest) returns (TermEntry);
+  rpc ListTerms (Empty) returns (ListTermsResponse);
+}
+
+message CreateTermRequest {
+  string term = 1;
+  string definition = 2;
+}
+
+message GetTermRequest {
+  string term = 1;
+}
+
+message TermEntry {
+  string term = 1;
+  string definition = 2;
+}
+
+message ListTermsResponse {
+  repeated TermEntry entries = 1;
+}
+
+message Empty {}

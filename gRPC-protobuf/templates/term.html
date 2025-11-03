@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+{% if term %}
+  <div class="card shadow-sm">
+    <div class="card-header bg-success text-white">{{ term.term }}</div>
+    <div class="card-body">
+      <p class="card-text">{{ term.definition }}</p>
+      <a href="{{ url_for('index') }}" class="btn btn-outline-primary mt-2">← Назад</a>
+    </div>
+  </div>
+{% else %}
+  <div class="alert alert-warning">
+    Термин <strong>{{ name }}</strong> не найден.
+    <a href="{{ url_for('index') }}" class="alert-link">Вернуться на главную</a>
+  </div>
+{% endif %}
+{% endblock %}
