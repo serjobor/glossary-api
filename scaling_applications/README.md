@@ -30,7 +30,7 @@
 
 | Фото |
 |------|
-|!![1](./img/image-9.png)|
+|![1](./img/image-9.png)|
 |![2](./img/image-10.png)|
 |![3](./img/image-11.png)|
 
