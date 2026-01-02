@@ -76,9 +76,10 @@ healthcheck:
 
 | Фото |
 |------|
-|1|
-|2|
-|3|
+|![1](./img/image-15.png)|
+|![2](./img/image-16.png)|
+|![3](./img/image-17.png)|
+|![4](./img/image-18.png)|
 
 Конфигурация теста
 
