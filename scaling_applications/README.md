@@ -2,9 +2,9 @@
 
 1. Docker registry for Linux Part 1.
 
-![Docker registry for Linux Part 1](./img/image.png)
+<img src="./img/image.png" alt="Docker registry for Linux Part 1" width="500">
 
-2. Docker registry for Linux Parts 2 & 3.
+3. Docker registry for Linux Parts 2 & 3.
 
 ![UNAUTHORIZED](./img/image-1.png)
 
